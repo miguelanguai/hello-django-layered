@@ -1,0 +1,58 @@
+# Sistema Operativo
+.DS_Store                # macOS
+Thumbs.db                # Windows
+desktop.ini              # Windows
+
+# Entorno virtual de Python
+venv/
+env/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg
+*.egg-info/
+.eggs/
+
+# Configuración de IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*~
+
+# Archivos de log
+*.log
+*.pot
+
+# Archivos de base de datos locales
+*.sqlite3
+
+# Archivos de migraciones de Django
+migrations/
+*/migrations/*       # Ignora carpetas de migraciones en cualquier subdirectorio excepto `__init__.py`
+!*/migrations/__init__.py
+
+# Archivos de configuración y credenciales
+.env                 # Variables de entorno sensibles
+*.key                # Claves secretas o privadas
+
+# Archivos estáticos y media generados automáticamente
+staticfiles/
+media/
+
+# Configuración de dependencias
+Pipfile
+Pipfile.lock
+
+# Archivos de pruebas (si no los quieres incluir)
+.coverage
+.pytest_cache/
+.tox/
+
+# Archivos de Docker (opcional, si usas Docker)
+*.pid
+*.tar
+logs/
+docker-compose.override.yml
