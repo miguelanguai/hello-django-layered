@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: import dependencies
+        run: pip install djangorestframework
       - name: run tests
         run: python manage.py test
