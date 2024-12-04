@@ -6,7 +6,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: import dependencies
+      - name: install djangorestframework dependency
         run: pip install djangorestframework
+      - name: install coverage dependency
+        run: pip install coverage
       - name: run tests
         run: python manage.py test
+      - name: Show how much code is covered by tests
+        run: coverage report
