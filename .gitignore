@@ -51,6 +51,9 @@ Pipfile.lock
 .pytest_cache/
 .tox/
 
+## Carpeta que genera coverage
+htmlcov/
+
 # Archivos de Docker (opcional, si usas Docker)
 *.pid
 *.tar
